@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
+
+:root {
+  font-family: 'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --color-bg: #d4cff5;
+  --color-bg-soft: #e6ddff;
+  /* 背景の階層: ページ < カード（浮かせる） */
+  --color-surface: #d9c6ff; /* 各ページ <main> のベース */
+  --color-surface-card: #f5f0ff; /* カード・リスト項目（少し明るく浮かせる） */
+  --color-text: #1e1b2e;
+  --color-text-muted: #5e5a82;
+  --color-primary: #6d28d9; /* 全体のアクセントカラーをフォームと統一（紫系） */
+  --color-primary-hover: #5b21b6;
+  --color-primary-soft: rgba(109, 40, 217, 0.16);
+  --color-border: #c9c1e5;
+  --color-border-focus: #6d28d9;
+  --color-error: #b91c1c;
+  --color-error-bg: #fef2f2;
+
+  /* フォーム用 */
+  --form-bg: #e6ddff;
+  --form-bg-focus: #f6f1ff;
+  --form-border: #d3caee;
+  --form-border-hover: #b9acd9;
+  --form-accent: #6d28d9;
+  --form-accent-hover: #5b21b6;
+  --form-accent-soft: rgba(109, 40, 217, 0.14);
+  --form-label: #4c4768;
+  --form-placeholder: #8b8499;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --shadow-soft: 0 2px 8px rgba(30, 27, 46, 0.06);
+  --shadow-card: 0 4px 24px rgba(30, 27, 46, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  background-image: linear-gradient(
+    165deg,
+    var(--color-bg-soft) 0%,
+    var(--color-bg) 40%,
+    #dfdceb 100%
+  );
+  color: var(--color-text);
+}
+
+#app {
+  width: 100%;
+  max-width: 375px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  background-color: transparent;
+}
+
+a {
+  font-weight: 500;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-primary-hover);
+  text-decoration: underline;
+}
